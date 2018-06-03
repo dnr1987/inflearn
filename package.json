@@ -1,0 +1,30 @@
+{
+  "name": "inflearn",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "description": "inflearn",
+  "author": {
+    "name": "choi"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.0",
+    "cors": "^2.8.4",
+    "debug": "^2.2.0",
+    "ejs": "^2.5.8",
+    "express": "^4.14.0",
+    "method-override": "^2.3.10",
+    "morgan": "^1.7.0",
+    "mysql": "^2.15.0",
+    "node-cache": "^4.2.0",
+    "node-cron": "^1.2.1",
+    "pug": "^2.0.0-beta6",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "serve-favicon": "^2.3.0"
+  }
+}

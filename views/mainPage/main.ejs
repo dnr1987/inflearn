@@ -1,0 +1,588 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>암호화폐 시세정보</title>
+    <!-- Bootstrap core CSS-->
+    <link href="/public/bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="/public/bootstrap/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="/public/bootstrap/css/sb-admin.css" rel="stylesheet">
+	<link href="/public/common.js" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <a class="navbar-brand" href="index.html">암호화폐 정보</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">               
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+                    <a class="nav-link" href="charts.html">
+                        <i class="fa fa-fw fa-area-chart"></i>
+                        <span class="nav-link-text">종합지표</span>
+                    </a>
+                </li>                
+            </ul>
+            <ul class="navbar-nav sidenav-toggler">
+                <li class="nav-item">
+                    <a class="nav-link text-center" id="sidenavToggler">
+                        <i class="fa fa-fw fa-angle-left"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-fw fa-envelope"></i>
+                        <span class="d-lg-none">Messages
+                            <span class="badge badge-pill badge-primary">12 New</span>
+                        </span>
+                        <span class="indicator text-primary d-none d-lg-block">
+                            <i class="fa fa-fw fa-circle"></i>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+                        <h6 class="dropdown-header">New Messages:</h6>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <strong>David Miller</strong>
+                            <span class="small float-right text-muted">11:21 AM</span>
+                            <div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they
+                                reach the end of the box so they don't overflow over to the sides!</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <strong>Jane Smith</strong>
+                            <span class="small float-right text-muted">11:21 AM</span>
+                            <div class="dropdown-message small">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <strong>John Doe</strong>
+                            <span class="small float-right text-muted">11:21 AM</span>
+                            <div class="dropdown-message small">I've sent the final files over to you for review. When you're able to sign off of them let me
+                                know and we can discuss distribution.</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item small" href="#">View all messages</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-fw fa-bell"></i>
+                        <span class="d-lg-none">Alerts
+                            <span class="badge badge-pill badge-warning">6 New</span>
+                        </span>
+                        <span class="indicator text-warning d-none d-lg-block">
+                            <i class="fa fa-fw fa-circle"></i>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+                        <h6 class="dropdown-header">New Alerts:</h6>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>
+                                    <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                            </span>
+                            <span class="small float-right text-muted">11:21 AM</span>
+                            <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-danger">
+                                <strong>
+                                    <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+                            </span>
+                            <span class="small float-right text-muted">11:21 AM</span>
+                            <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>
+                                    <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                            </span>
+                            <span class="small float-right text-muted">11:21 AM</span>
+                            <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item small" href="#">View all alerts</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Search for...">
+                            <span class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content-wrapper">
+        <div class="container-fluid">
+
+            <div class="card mb-3">
+                <div class="card-header">BTC 시세표</div>
+                <div class="card-body">
+					<div id="item_num_1">
+						<div id="item_num_4">							
+							<div class="table-responsive">
+								<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+									<thead>
+									<tr>
+										<th>거래소</th>
+										<th>시세(KRW)</th>
+										<th>시세(USD)</th>
+										<th>변동률</th>
+										<th>프리미엄</th>
+										<th>거래량</th>
+									</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>빗썸</td>
+											<td id="bithumb_krw">Loading...</td>
+											<td id="bithumb_usd">Loading...</td>
+											<td id="bithumb_change">Loading...</td>
+											<td id="bithumb_premium">Loading...</td>
+											<td id="bithumb_volume">Loading...</td>
+										</tr>
+										<tr>
+											<td>업비트</td>
+											<td id="upbit_krw">Loading...</td>
+											<td id="upbit_usd">Loading...</td>
+											<td id="upbit_change">Loading...</td>
+											<td id="upbit_premium">Loading...</td>
+											<td id="upbit_volume">Loading...</td>
+										</tr>
+										<tr>
+											<td>비트파이넥스</td>
+											<td id="bitfinex_krw">Loading...</td>
+											<td id="bitfinex_usd">Loading...</td>
+											<td id="bitfinex_change">Loading...</td>
+											<td id="bitfinex_premium">-</td>
+											<td id="bitfinex_volume">Loading...</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="card-footer small text-muted">푸터</div>
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            암호화폐 시가총액 순위</div>
+                        <div class="card-body">
+                            <div id="item_num_2">
+								<div class="table-responsive">
+									<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+										<thead>
+										<tr>
+											<th>코인</th>
+											<th>순위</th>
+											<th>거래량</th>
+											<th>시가총액</th>
+											<th>유통물량</th>
+											<th>전체물량</th>
+											<th>물량한계치</th>
+										</tr>
+										</thead>
+										<tbody id="marketcap">							
+										</tbody>
+									</table>
+								</div>
+							</div>
+                        </div>
+                        <div class="card-footer small text-muted">푸터</div>
+                    </div>
+                </div>                
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            암호화폐 시가총액 점유율</div>
+                        <div class="card-body">
+							<div id="piechart"></div>
+                        </div>
+                        <div class="card-footer small text-muted">푸터</div>
+                    </div>
+                </div>                
+            </div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            비트코인 마진거래 상황</div>
+                        <div class="card-body">
+							<div id="margin_chart"></div>
+                        </div>
+                        <div class="card-footer small text-muted">푸터</div>
+                    </div>
+                </div>                
+            </div>
+			
+        </div>
+
+	        
+        <!-- /.container-fluid-->
+        <!-- /.content-wrapper-->
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="text-center">
+                    <small>Copyright © Your Website 2018</small>
+                </div>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!-- Logout Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript-->
+        <script src="/public/bootstrap/vendor/jquery/jquery.min.js"></script>
+        <script src="/public/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="/public/bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>        
+
+		<!-- 여기서부터... -->
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+		<script src="/public/common.js"></script>
+
+		<!-- Styles -->
+		<style>
+			#margin_chart {
+			width: 100%;
+			height: 500px;
+			}
+		</style>
+
+		<!-- Resources -->
+		<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+		<script src="https://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js"></script>
+		<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+		<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+		<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+		
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>			
+			let upColor = "rgba(122, 228, 74, 0.1)";
+			let downColor = "rgba(233, 62, 42, 0.1)";
+			//$("").css({'backgroundColor': upColor});			
+
+			let moneyAPI = getAPI("/api/money");
+			let money = 0;
+			moneyAPI.then(function (m) { // 우선 환율정보를 가져오고
+				money = m; // 환율을 먼저 변수에 담아서
+				
+				setInterval(function() {
+					refresh(); // 이후 호출될 함수에서 환율정보를 사용할 수 있도록 해준다
+				}, 3000);
+			});
+			
+			// 환율
+			// 비트파이넥스
+			// 빗썸, 업비트
+
+			function refresh() {
+				let upbitAPI = getAPI("/api/upbit");
+				let bithumbAPI = getAPI("/api/bithumb");
+				let bitfinexAPI = getAPI("/api/bitfinex");
+				let coinmarketcapAPI = getAPI("/api/coinmarketcap");
+
+				let finexPrice = 0;
+				bitfinexAPI.then(function(bitfinex) {
+					//  ["tBTCUSD", 8127.4, 108.25637389, 8127.5, 40.23172135, 105.6, 0.0132, 8127.5, 24163.78618446, 8180, 7859]
+					finexPrice = bitfinex[0][7];
+
+					let bitfinexKrw = numberWithCommas(Number(finexPrice * money.usdkrw).toFixed(0));
+					let bitfinexUsd = numberWithCommas(finexPrice);
+					let bitfinexChange = numberWithCommas(Number(bitfinex[0][5] * money.usdkrw).toFixed(0));
+					let bitfinexChangePercent = Number(bitfinex[0][6] * 100).toFixed(2);
+					let bitfinexVolume = numberWithCommas(Number(bitfinex[0][8]).toFixed(0));
+
+					$('#bitfinex_krw').html(bitfinexKrw);
+					$('#bitfinex_usd').html(bitfinexUsd);
+					$('#bitfinex_change').html(bitfinexChange + " (" + bitfinexChangePercent + "%)");
+					$('#bitfinex_volume').html(bitfinexVolume + " BTC");
+
+					bithumbAPI.then(function(bithumb) {
+						let bithumbKrw = bithumb.data.BTC.closing_price;
+						let bithumbUsd = Number(bithumbKrw / money.usdkrw).toFixed(0);
+						let premium = Number(((bithumbUsd - finexPrice) / finexPrice) * 100).toFixed(2);
+						let open = bithumb.data.BTC.opening_price;
+						let close = bithumb.data.BTC.closing_price;
+						let change = close - open;
+						let changePercent = Number(((close - open) / open) * 100).toFixed(2);
+						let volume = Number(bithumb.data.BTC.volume_1day).toFixed(0);
+						
+						$('#bithumb_krw').html(numberWithCommas(bithumbKrw));
+						$('#bithumb_usd').html(numberWithCommas(bithumbUsd));
+						$('#bithumb_change').html(numberWithCommas(change) + " (" + changePercent + "%)");
+						$('#bithumb_premium').html(premium + "%");
+						$('#bithumb_volume').html(numberWithCommas(volume) + " BTC");
+					});
+
+					upbitAPI.then(function(upbit) {
+						let upbitPrice = upbit[0].tradePrice;
+						let upbitUsdPrice = Number(upbitPrice / money.usdkrw).toFixed(0);
+						let premium = ((upbitUsdPrice - finexPrice) / finexPrice) * 100;
+						$('#upbit_krw').html(numberWithCommas(upbitPrice));
+						$('#upbit_usd').html(numberWithCommas(upbitUsdPrice));
+						$('#upbit_change').html(numberWithCommas(upbit[0].changePrice) + " (" + Number(upbit[0].changeRate * 100).toFixed(2) + "%)");
+						$('#upbit_premium').html(premium.toFixed(2) + "%");
+						$('#upbit_volume').html(Number(upbit[0].candleAccTradeVolume).toFixed(0) + " BTC");
+					});
+
+					coinmarketcapAPI.then(function(marketcap) {
+						let html = '';
+						for (obj of marketcap) {
+							html += '<tr>';
+							html += '<td>' + obj.name + '</td>';
+							html += '<td>' + obj.rank + '</td>';
+							html += '<td>$' + numberWithCommas(Number(obj["24h_volume_usd"]).toFixed(0)) + '</td>';
+							html += '<td>$' + numberWithCommas(Number(obj.market_cap_usd).toFixed(0)) + '</td>';
+							html += '<td>' + numberWithCommas(Number(obj.available_supply).toFixed(0)) + ' ' + obj.symbol + '</td>';
+							html += '<td>' + numberWithCommas(Number(obj.total_supply).toFixed(0)) + ' ' + obj.symbol + '</td>';
+							let maxSupply = obj.max_supply == null ? "-" : Number(obj.max_supply).toFixed(0);
+							html += '<td>' + numberWithCommas(maxSupply) + '</td>';
+							html += '</tr>';
+						}
+						$('#marketcap').html(html);
+					});
+				});
+			}
+
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawMarketcap);
+
+			function drawMarketcap() {
+				let coinmarketcapAPI = getAPI("/api/coinmarketcap");
+				let markets = coinmarketcapAPI.then(function(marketcap) {
+					let datas = [];
+					datas.push(['USD시총','top5점유율']);
+					for (obj of marketcap) {
+						datas.push([obj.name, Number(obj["market_cap_usd"])]);
+					}
+
+					let data_pie_vis = google.visualization.arrayToDataTable(datas);
+					
+
+					var options = {
+						height: '400',
+						legend:{
+							position:'bottom'
+						},
+						chartArea:{width:'100%','height':'80%'},					
+						pieSliceTextStyle:{
+							fontSize : 12
+						},
+						pieHole:0.4
+					};		
+
+					var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+					chart.draw(data_pie_vis, options);		
+					console.log(chart);
+			
+					//jQuery('div#piechart-title-wrapper span').text(chart_title);
+				});
+			}
+
+			createMarginChart();
+
+			// 암차트를 활용한 마진거래 데이터 시각화			
+			function createMarginChart() {
+				var chart = AmCharts.makeChart("margin_chart", {
+					"type": "serial",
+					"theme": "light",
+					"dataLoader": {
+						"url": "http://localhost:5000/api/bitfinex_margin",
+						"format": "json",
+						"reload": 30,
+						"postProcess": function (data) {
+
+							// Function to process (sort and calculate cummulative volume)
+							function processData(list, type, desc) {
+
+								// Convert to data points
+								for (var i = 0; i < list.length; i++) {
+									list[i] = {
+										value: Number(list[i][0]), // timestaap
+										volume: Number(list[i][1]), //
+									}
+								}
+
+								// Sort list just in case
+								list.sort(function (a, b) {
+									if (a.value > b.value) {
+										return 1;
+									} else if (a.value < b.value) {
+										return -1;
+									} else {
+										return 0;
+									}
+								});
+
+								// Calculate cummulative volume
+								if (desc) {
+									for (var i = list.length - 1; i >= 0; i--) {
+										list[i].totalvolume = list[i].volume;
+										var dp = {};
+										dp["value"] = list[i].value;
+										dp[type + "volume"] = list[i].volume;
+										dp[type + "totalvolume"] = list[i].totalvolume;
+										res.unshift(dp);
+									}
+								} else {
+									for (var i = list.length - 1; i >= 0; i--) {
+										list[i].totalvolume = list[i].volume;
+										var dp = {};
+										dp["value"] = list[i].value;
+										dp[type + "volume"] = list[i].volume;
+										dp[type + "totalvolume"] = list[i].totalvolume;
+										res.push(dp);
+									}
+								}
+							}
+
+							// Init
+							var res = [];
+							processData(data.bids, "bids", true);
+							processData(data.asks, "asks", false);
+
+							//console.log(res);
+							return res;
+						}
+					},
+					"graphs": [{
+						"id": "bids",
+						"fillAlphas": 0.1,
+						"lineAlpha": 1,
+						"lineThickness": 2,
+						"lineColor": "#0f0",
+						"type": "step",
+						"valueField": "bidstotalvolume",
+						"balloonFunction": balloon
+					}, {
+						"id": "asks",
+						"fillAlphas": 0.1,
+						"lineAlpha": 1,
+						"lineThickness": 2,
+						"lineColor": "#f00",
+						"type": "step",
+						"valueField": "askstotalvolume",
+						"balloonFunction": balloon
+					}, {
+						"lineAlpha": 0,
+						"fillAlphas": 0.2,
+						"lineColor": "#000",
+						"type": "column",
+						"clustered": false,
+						"valueField": "bidsvolume",
+						"showBalloon": false
+					}, {
+						"lineAlpha": 0,
+						"fillAlphas": 0.2,
+						"lineColor": "#000",
+						"type": "column",
+						"clustered": false,
+						"valueField": "asksvolume",
+						"showBalloon": false
+					}],
+					"categoryField": "value",
+					"chartCursor": {},
+					"balloon": {
+						"textAlign": "left"
+					},
+					"categoryAxis": {
+						"title": "Price (BTC/ETH)",
+						"minHorizontalGap": 100,
+						"startOnAxis": true,
+						"showFirstLabel": false,
+						"showLastLabel": false
+					},
+					"export": {
+						"enabled": true
+					}
+				});
+
+				function balloon(item, graph) {
+					var txt;
+					if (graph.id == "asks") {
+						txt = "Short timestamp: <strong>" + formatNumber(item.dataContext.value, graph.chart, 4) + "</strong><br />"
+							+ "Total volume: <strong>" + formatNumber(item.dataContext.askstotalvolume, graph.chart, 4) + "</strong><br />"
+							+ "Volume: <strong>" + formatNumber(item.dataContext.asksvolume, graph.chart, 4) + "</strong>";
+					}
+					else {
+						txt = "Long timestamp: <strong>" + formatNumber(item.dataContext.value, graph.chart, 4) + "</strong><br />"
+							+ "Total volume: <strong>" + formatNumber(item.dataContext.bidstotalvolume, graph.chart, 4) + "</strong><br />"
+							+ "Volume: <strong>" + formatNumber(item.dataContext.bidsvolume, graph.chart, 4) + "</strong>";
+					}
+					return txt;
+				}
+
+				function formatNumber(val, chart, precision) {
+					return AmCharts.formatNumber(
+						val,
+						{
+							precision: precision ? precision : chart.precision,
+							decimalSeparator: chart.decimalSeparator,
+							thousandsSeparator: chart.thousandsSeparator
+						}
+					);
+				}
+				return chart;
+			}
+
+		</script>
+    </div>
+</body>
+
+</html>
